@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1025917266126",
+    "project_id": "flags-in-city",
+    "storage_bucket": "flags-in-city.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1025917266126:android:4ab9288f658c3dda03089f",
+        "android_client_info": {
+          "package_name": "com.example.flagsincity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1025917266126-ge9b6mo7dqb2b4n299thpnln99rnugve.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAicauMiZOqE2Hiw7yOLeJf1vxzpQ4L6xs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1025917266126-ge9b6mo7dqb2b4n299thpnln99rnugve.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

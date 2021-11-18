@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="login">Login</string>
+    <string name="fortress_picture">Fortress Picture</string>
+    <string name="user_s_progress_and_his_fortress">User\'s progress and his fortress</string>
+    <string name="userNameLogin"> </string>
+    <string name="Sign_in_problem">Problem with Google Sign in</string>
+    <string name="continue_to_game">Continue to game</string>
+    <string name="save">Save</string>
+    <string name="enter_your_nickname">Enter your nickname</string>
+    <string name="userNickname">Nickname</string>
+    <string name="userLives">Lives:</string>
+    <string name="change">Change</string>
+    <string name="yourHomeLocation">Your Fortress location</string>
+    <string name="buttonChangeHome">Change location of your Home</string>
+    <string name="buttonChangeFortress">Change location of your Fortress</string>
+    <string name="get_supply">Get supply</string>
+    <string name="give_supply">Give supply</string>
+    <string name="you_are_caring_supplies">You are caring supplies!</string>
+</resources>

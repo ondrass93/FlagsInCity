@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/map"
+        android:icon="@drawable/ic_baseline_map_24"
+        android:title="@string/map"
+        />
+
+
+    <item
+        android:id="@+id/fortress"
+        android:icon="@drawable/ic_baseline_emoji_flags_24"
+        android:title="@string/fortress"
+        />
+
+
+    <item
+        android:id="@+id/history"
+        android:icon="@drawable/ic_baseline_reorder_24"
+        android:title="@string/history"
+        />
+</menu>

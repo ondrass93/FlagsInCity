@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fortress"
+    app:startDestination="@+id/fortressFragment">
+
+    <fragment
+        android:id="@+id/fortressFragment"
+        android:name="com.example.flagsincity.fortress.FortressFragment"
+        android:label="My Fortress"
+        tools:layout="@layout/fragment_fortress">
+        <action
+            android:id="@+id/action_fortress_to_build"
+            app:destination="@id/buildFortressFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/buildFortressFragment"
+        android:name="com.example.flagsincity.buildFortress.BuildFortressFragment"
+        android:label="Build Fortress"
+        tools:layout="@layout/fragment_build_fortress"/>
+    <action
+        android:id="@+id/action_build_to_fortress"
+        app:destination="@id/fortressFragment"
+        app:enterAnim="@anim/fade_in"
+        app:exitAnim="@anim/fade_out" />
+
+</navigation>

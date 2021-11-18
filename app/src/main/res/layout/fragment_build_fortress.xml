@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="buildFortressViewModel"
+            type="com.example.flagsincity.buildFortress.BuildFortressViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_text_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_your_nickname"
+            app:layout_constraintBottom_toTopOf="@+id/button_save_nickname"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button_save_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="200dp"
+            android:text="@string/save"
+            app:layout_constraintBottom_toTopOf="@+id/homeLocationTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_text_nickname" />
+
+
+        <TextView
+            android:id="@+id/homeLocationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home location"
+            app:layout_constraintBottom_toTopOf="@+id/buttonChangeHome"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_save_nickname" />
+
+        <Button
+            android:id="@+id/buttonChangeHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/change"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/homeLocationState"
+            app:layout_constraintTop_toBottomOf="@+id/homeLocationTextView"
+            app:layout_constraintBottom_toTopOf="@+id/fortressLocationTextView"/>
+
+
+
+        <ImageView
+            android:id="@+id/homeLocationState"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:layout_constraintBottom_toBottomOf="@+id/buttonChangeHome"
+            app:layout_constraintEnd_toStartOf="@+id/buttonChangeHome"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/buttonChangeHome"
+            app:srcCompat="@drawable/location" />
+
+
+        <Button
+            android:id="@+id/buttonChangeFortress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/change"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/buttonChangeHome"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/buttonChangeHome"
+            app:layout_constraintTop_toBottomOf="@+id/fortressLocationTextView" />
+
+        <TextView
+            android:id="@+id/fortressLocationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fortress location"
+            app:layout_constraintBottom_toTopOf="@+id/fortressLocationState"
+            app:layout_constraintTop_toBottomOf="@+id/buttonChangeHome"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="462dp" />
+
+        <ImageView
+            android:id="@+id/fortressLocationState"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:layout_constraintBottom_toBottomOf="@+id/buttonChangeFortress"
+            app:layout_constraintEnd_toEndOf="@+id/homeLocationState"
+            app:layout_constraintStart_toStartOf="@+id/homeLocationState"
+            app:layout_constraintTop_toTopOf="@+id/buttonChangeFortress"
+            app:srcCompat="@drawable/location" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>
